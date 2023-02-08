@@ -1,0 +1,43 @@
+@use "../../styles.scss" as *;
+
+:host {
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  background-color: map-get($palette, "White");
+  margin: 40px 0 0 0;
+  padding: 56px 28px 32px;
+}
+
+.title {
+  color: map-get($palette, "Black");
+  font: {
+    size: 20px;
+    weight: $extra-bold;
+  }
+  line-height: 25px;
+  margin: 0 0 16px;
+}
+
+.body {
+  @extend %body-s;
+  margin: 0 0 24px;
+}
+
+.button {
+  color: map-get($palette, "Course button");
+  font: {
+    size: 18px;
+    weight: $bold;
+  }
+  line-height: 28px;
+  border: none;
+  padding: 0;
+  background: initial;
+}
+
+.icon {
+  position: absolute;
+  top: -24px;
+  left: 28px;
+}

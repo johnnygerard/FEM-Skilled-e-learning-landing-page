@@ -1,0 +1,99 @@
+@use "../styles.scss" as *;
+
+.logo {
+  height: 21.5px;
+}
+
+%logo-button {
+  padding: 10px 24px;
+
+  border: none {
+    radius: 28px;
+  }
+
+  font: {
+    size: 16px;
+    weight: $bold;
+  }
+  line-height: 28px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 16px 38px;
+
+  &-button {
+    color: map-get($palette, "White");
+    background: map-get($palette, "Black");
+    @extend %logo-button;
+  }
+}
+
+.hero {
+  margin: 0 16px;
+
+  &-heading {
+    margin: 0 0 26px;
+    @extend %heading-l;
+  }
+
+  &-body {
+    margin: 0 0 24px;
+    @extend %body-s;
+  }
+
+  &-button {
+    font-size: 16px;
+    font-weight: $bold;
+    line-height: 26px;
+    color: map-get($palette, "White");
+
+    background: $orange-gradient;
+    border: none {
+      radius: 31.5px;
+    }
+    padding: 15px 38px;
+    margin: 0 0 46px;
+  }
+
+  &-image {
+    margin: 0 8px 66px;
+    width: calc(100% - 16px);
+  }
+}
+
+.courses {
+  background: $white-gradient;
+  padding: 0 16px 80px;
+}
+
+.course-heading {
+  background: $orange-gradient;
+  font: {
+    size: 24px;
+    weight: $extra-bold;
+  }
+  line-height: 32px;
+  color: map-get($palette, "White");
+  padding: 24px 28px 32px;
+  margin: 0;
+  border: none {
+    radius: 10px;
+  }
+}
+
+.footer {
+  background: map-get($palette, "Black");
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 16px;
+
+  &-button {
+    color: map-get($palette, "White");
+    background: $blue-gradient;
+    @extend %logo-button;
+  }
+}
