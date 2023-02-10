@@ -55,16 +55,18 @@
       radius: 31.5px;
     }
     padding: 15px 38px;
-    margin: 0 0 46px;
+    margin: 0;
   }
 
   &-image {
-    margin: 0 8px 66px;
+    margin: 46px 8px 66px;
     width: calc(100% - 16px);
   }
 }
 
 .courses {
+  display: grid;
+  row-gap: 40px;
   background: $white-gradient;
   padding: 0 16px 80px;
 }
@@ -99,7 +101,7 @@
 }
 
 // Tablet
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .header {
     margin: 24px 40px 100px;
   }
@@ -119,7 +121,6 @@
 
   .courses {
     padding: 24px 40px 86px;
-    display: grid;
     grid-template: repeat(3, 259px) / repeat(2, 1fr);
     gap: 56px 12px;
   }
@@ -130,5 +131,70 @@
 
   .footer {
     padding: 36px 40px;
+  }
+}
+
+// Desktop
+@media (min-width: 1440px) {
+  %logo-button {
+    font-size: 18px;
+    padding: 14px 32px;
+  }
+
+  .header {
+    margin: 24px 165px 172px;
+
+    &-button {
+      @extend %logo-button;
+    }
+  }
+
+  .footer {
+    padding: 32px 165px;
+
+    &-button {
+      @extend %logo-button;
+    }
+  }
+
+  .hero {
+    margin: 0 0 226px 165px;
+    width: 457px;
+
+    &-heading {
+      @include heading-xl;
+      margin: 0 0 29px;
+    }
+
+    &-body {
+      @include body-m;
+      margin: 0 0 40px;
+    }
+
+    &-button {
+      font-size: 18px;
+      line-height: 28px;
+      padding: 19px 32px 16px;
+      margin: 0;
+    }
+
+    &-image {
+      margin: 0;
+      position: absolute;
+      top: -146px;
+      right: -336px;
+      width: 1046px;
+    }
+  }
+
+  .courses {
+    padding: 24px 165px 140px;
+    grid-template: repeat(2, 322px) / repeat(3, 1fr);
+    gap: 80px 30px;
+  }
+
+  .course-heading {
+    @include heading-m;
+    padding: 64px 32px 138px;
   }
 }
