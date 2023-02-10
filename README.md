@@ -1,5 +1,5 @@
 # Frontend Mentor | Skilled e-learning landing page
-This is my solution to the [Skilled e-learning landing page challenge]() from [Frontend Mentor](https://www.frontendmentor.io/).
+This is my solution to the [Skilled e-learning landing page challenge](https://www.frontendmentor.io/challenges/skilled-elearning-landing-page-S1ObDrZ8q) from [Frontend Mentor](https://www.frontendmentor.io/).
 
 ## Tech Stack
  - Angular
