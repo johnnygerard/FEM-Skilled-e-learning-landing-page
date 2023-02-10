@@ -33,6 +33,9 @@
 
 .hero {
   margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   &-heading {
     margin: 0 0 26px;
@@ -58,9 +61,15 @@
     margin: 0;
   }
 
+  &-image-container {
+    align-self: center;
+  }
+
   &-image {
-    margin: 46px 8px 66px;
+    display: block;
+    margin: 46px 0 66px;
     width: calc(100vw - 48px);
+    max-width: 480px;
   }
 }
 
@@ -116,6 +125,7 @@
       top: -92px;
       right: -298px;
       width: 695px;
+      max-width: none;
     }
   }
 
@@ -184,6 +194,7 @@
       top: -146px;
       right: -336px;
       width: 1046px;
+      max-width: none;
     }
   }
 
