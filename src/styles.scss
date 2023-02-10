@@ -19,38 +19,38 @@ $extra-bold: 800;
 $bold: 700;
 $medium: 500;
 
-%heading-xl {
+@mixin heading-xl {
   font-weight: $extra-bold;
   font-size: 56px;
   line-height: 70px;
 }
 
-%heading-l {
+@mixin heading-l {
   font-weight: $extra-bold;
   font-size: 40px;
   line-height: 51px;
 }
 
-%heading-m {
+@mixin heading-m {
   font-weight: $extra-bold;
   font-size: 32px;
   line-height: 40px;
 }
 
-%heading-s {
+@mixin heading-s {
   font-weight: $extra-bold;
   font-size: 24px;
   line-height: 28px;
 }
 
-%body-m {
+@mixin body-m {
   font-weight: $medium;
   font-size: 18px;
   line-height: 28px;
   color: map-get($palette, "Body text");
 }
 
-%body-s {
+@mixin body-s {
   font-weight: $medium;
   font-size: 16px;
   line-height: 26px;

@@ -28,7 +28,7 @@
 }
 
 .body {
-  @extend %body-s;
+  @include body-s;
   margin: 0 0 24px;
 }
 

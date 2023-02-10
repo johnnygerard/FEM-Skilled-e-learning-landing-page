@@ -4,7 +4,7 @@
   height: 21.5px;
 }
 
-%logo-button {
+@mixin logo-button {
   padding: 10px 24px;
 
   border: none {
@@ -27,7 +27,7 @@
   &-button {
     color: map-get($palette, "White");
     background: map-get($palette, "Black");
-    @extend %logo-button;
+    @include logo-button;
   }
 }
 
@@ -36,12 +36,12 @@
 
   &-heading {
     margin: 0 0 26px;
-    @extend %heading-l;
+    @include heading-l;
   }
 
   &-body {
     margin: 0 0 24px;
-    @extend %body-s;
+    @include body-s;
   }
 
   &-button {
@@ -94,7 +94,7 @@
   &-button {
     color: map-get($palette, "White");
     background: $blue-gradient;
-    @extend %logo-button;
+    @include logo-button;
   }
 }
 
