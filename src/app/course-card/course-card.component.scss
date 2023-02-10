@@ -28,6 +28,7 @@
 }
 
 .button {
+  cursor: pointer;
   color: map-get($palette, "Course button");
   font: {
     size: 18px;
@@ -38,6 +39,10 @@
   padding: 0;
   background: initial;
   margin: auto 0 0 0;
+}
+
+.button:hover {
+  color: mix(map-get($palette, "Course button"), #fff5);
 }
 
 .icon {
