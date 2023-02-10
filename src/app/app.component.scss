@@ -97,3 +97,38 @@
     @extend %logo-button;
   }
 }
+
+// Tablet
+@media (min-width: 768px) {
+  .header {
+    margin: 24px 40px 100px;
+  }
+
+  .hero {
+    margin: 0 0 186px 40px;
+    width: 398px;
+
+    &-image {
+      margin: 0;
+      position: absolute;
+      top: -92px;
+      right: -298px;
+      width: 695px;
+    }
+  }
+
+  .courses {
+    padding: 24px 40px 86px;
+    display: grid;
+    grid-template: repeat(3, 259px) / repeat(2, 1fr);
+    gap: 56px 12px;
+  }
+
+  .course-heading {
+    padding: 56px 21px 139px 32px;
+  }
+
+  .footer {
+    padding: 36px 40px;
+  }
+}

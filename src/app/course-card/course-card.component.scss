@@ -9,6 +9,14 @@
   padding: 56px 28px 32px;
 }
 
+// Tablet
+@media (min-width: 768px) {
+  :host {
+    margin: 0;
+    padding: 56px 22px 32px 32px;
+  }
+}
+
 .title {
   color: map-get($palette, "Black");
   font: {
