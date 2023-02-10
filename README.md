@@ -10,12 +10,14 @@ This is my solution to the [Skilled e-learning landing page challenge]() from [F
  - Figma
 
 ## Links
- - [Live version](https://fem-skilled-e-learning-landing-page-jgerard.pages.dev) hosted with [Cloudflare Pages](https://pages.cloudflare.com/)
- - [Solution]()
+ - [Live version](https://fem-skilled-e-learning-lp-jgerard.pages.dev) hosted with [Cloudflare Pages](https://pages.cloudflare.com/)
+ - [Solution](https://www.frontendmentor.io/solutions/angular-with-scss-8jIGfw_7Wm)
 
 ## Screenshots
 ### Mobile
 ![mobile screenshot](./screenshot-mobile.png)
+### Tablet
+![tablet screenshot](./screenshot-tablet.png)
 ### Desktop
 ![desktop screenshot](./screenshot-desktop.png)
 
