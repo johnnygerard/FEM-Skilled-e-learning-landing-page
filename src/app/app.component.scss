@@ -161,6 +161,10 @@
 
 // Desktop
 @media (min-width: $desktop-breakpoint) {
+  .logo {
+    height: 28px;
+  }
+
   %logo-button {
     font-size: 18px;
     padding: 14px 32px;
